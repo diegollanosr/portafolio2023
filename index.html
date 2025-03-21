@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="author" content="Diego Llanos R.">
+    <meta name="keywords" content="diegollanosr, diegollanosr17, diego llanos, programador, programador front end, front end,  contador, contabilidad, finanzas personales, portafolio, portfolio">
+    <meta name="description" content="Contador y programador, siempre busco generar propuestas de valor para solucionar problemas financieros y optimización de procesos.">
+    <meta name="copyright" content="Copyright Diego Llanos R.">
+    <title>Portafolio @diegollanosr</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/imagenes/logodlr.svg">
+    
+    <script src="https://kit.fontawesome.com/5829234c9c.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Courgette&family=Great+Vibes&family=Philosopher:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <header>
+        <section class="header__container">
+            <a href="https://diegollanosr.github.io/">
+                <div class="header__logo" alt="Logo de Diego Llanos"></div>
+            </a>
+            <p class="name">Diego Llanos R.</p>
+            <div class="navegacion">
+                <nav id="barraNavegacion" class="barra__navegacion">
+                    <button id="button__menu" class="button__menu">
+                        <i class="bi bi-chevron-double-right" ></i>
+                    </button>
+                    <ul id="navegacion__list" class="navegacion__list">
+                        <li class="navegacion__items">
+                            <a class="navegacion__items__link active" href="#home">
+                                <i class="bi bi-house-door-fill navegacion__items__link__icon"></i>
+                                <span class="navegacion__items__link__text">Inicio</span>
+                            </a>
+                        </li>
+                        <li class="navegacion__items submenu">
+                            <a class="navegacion__items__link" href="#aboutme">
+                                <i class="bi bi-info-lg navegacion__items__link__icon"></i>
+                                <span class="navegacion__items__link__text">Sobre mi</span>
+                            </a>
+                            <ul class="navegacion__sublista">
+                                <li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link" href="#formacion">
+                                    <i class="bi bi-mortarboard-fill navegacion__sublista__items__link__icon"></i>
+                                    <span class="navegacion__sublista__items__link__text">Formación</span>
+                                </a></li>
+                                <li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link" href="#skills">
+                                    <i class="bi bi-puzzle-fill navegacion__sublista__items__link__icon"></i>
+                                    <span class="navegacion__sublista__items__link__text">Skills</span>
+                                </a></li>
+                                <li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link" href="#hobbies">
+                                    <i class="bi bi-earbuds navegacion__sublista__items__link__icon"></i>
+                                    <span class="navegacion__sublista__items__link__text">Hobbies</span>
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="navegacion__items submenu">
+                            <a class="navegacion__items__link" href="#proyectos">
+                                <i class="bi bi-paperclip navegacion__items__link__icon"></i>
+                                <span class="navegacion__items__link__text">Proyectos</span>
+                            </a>
+                            <ul class="navegacion__sublista">
+                                <!--li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link" href="#contabilidad">
+                                    <i class="fa-sharp fa-solid fa-chart-simple navegacion__sublista__items__link__icon"></i>
+                                    <span class="navegacion__sublista__items__link__text">Contabilidad</span>
+                                </a></li-->
+                                <li class="navegacion__sublista__items"><a class="navegacion__sublista__items__link" href="#programacion">
+                                    <i class="bi bi-code navegacion__sublista__items__link__icon"></i>
+                                        <span class="navegacion__sublista__items__link__text">Programación</span>
+                                    </a></li>
+                                <li class="navegacion__sublista__items"><a href="#disenho"
+                                        class="navegacion__sublista__items__link">
+                                        <i class="bi bi-vector-pen navegacion__sublista__items__link__icon"></i>
+                                        <span class="navegacion__sublista__items__link__text">Diseño</span>
+                                    </a></li>
+                            </ul>
+                        </li>
+                        <li class="navegacion__items submenu">
+                            <a class="navegacion__items__link" href="#contacto">
+                                <i class="bi bi-at navegacion__items__link__icon"></i>
+                                <span class="navegacion__items__link__text">Contacto</span>
+                            </a>
+                            <ul class="navegacion__sublista">
+                                <li class="navegacion__sublista__items ocultar">
+                                    <a class="navegacion__sublista__items__link" href="https://github.com/diegollanosr"
+                                        target="_BLANK">
+                                        <i class="bi bi-github navegacion__sublista__items__link__icon"></i>
+                                        <span class="navegacion__sublista__items__link__text">
+                                            GitHub
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="navegacion__sublista__items ocultar"><a
+                                        class="navegacion__sublista__items__link"
+                                        href="https://linkedin.com/in/diegollanosr" target="_BLANK">
+                                        <i class="bi bi-linkedin navegacion__sublista__items__link__icon"></i>
+                                        <span class="navegacion__sublista__items__link__text">Linkedin</span>
+                                    </a></li>
+                                <li class="navegacion__sublista__items ocultar"><a
+                                        class="navegacion__sublista__items__link"
+                                        href="https://facebook.com/diegollanosr17" target="_BLANK">
+                                        <i class="bi bi-facebook navegacion__sublista__items__link__icon"></i>
+                                        <span class="navegacion__sublista__items__link__text">Facebook</span>
+                                    </a></li>
+                                <li class="navegacion__sublista__items ocultar">
+                                    <a class="navegacion__sublista__items__link"
+                                        href="https://instagram.com/diegollanosr17" target="_BLANK">
+                                        <i class="bi bi-instagram navegacion__sublista__items__link__icon"></i>
+                                        <span class="navegacion__sublista__items__link__text">Instagram</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div alt="Cambiar los colores" id="cambio_colores" class="header__colors">
+                    <div data-color="#2a74fd" class="header__color blue"></div>
+                    <div data-color="#8100fa" class="header__color violet"></div>
+                    <div data-color="#e8273e" class="header__color red"></div>
+                    <div data-color="#f75701" class="header__color orange"></div>
+                </div>
+                <button alt="activar modo oscuro" class="btn__darkmode active" id="btnDarkMode">
+                    <span>
+                        <img class="btn__darkmode__moon" src="./assets/imagenes/moon.jpg" alt="">
+                    </span>
+                    <span>
+                        <img class="btn__darkmode__sunny" src="./assets/imagenes/sun.jpg" alt="">
+                    </span>
+                </button> 
+            </div>
+        </section>  
+    </header>
+    <main>
+        <article id="container" class="container">
+            <section id="home" class="home__container">
+                <figure alt="foto" class="home__foto"></figure>
+                <section class="home__presentacion">
+                    <h1 class="title">
+                        Hola, mi nombre es Diego Llanos
+                    </h1>
+                    <h2 class="subtitle__n4">
+                        Bachiller en Contabilidad y Desarrollador Front-End
+                    </h2>
+                    <p class="subtitle__n3 welcome"><span id="welcome"></span>_|</p>
+                    <p class="body__text"> Bachiller en Contabilidad y desarrollador Front-End, con experiencia en diseño gráfico, liderazgo y gestión de equipos.
+                    </p>
+                    <p class="subtitle__n2">"No hay desarrollo profesional sin desarrollo personal"</p>
+                    <ul class="home__redessociales">
+                        <li class="home__redessociales__items">
+                            <a class="home__redessociales__items__link" href="https://github.com/diegollanosr"
+                                target="_BLANK">
+                                <i class="bi bi-github home__redessociales__items__icon"></i>
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="home__redessociales__items">
+                            <a class="home__redessociales__items__link" href="https://linkedin.com/in/diegollanosr"
+                                target="_BLANK">
+                                <i class="bi bi-linkedin home__redessociales__items__icon"></i>Linkedin
+                            </a>
+                        </li>
+                        <li class="home__redessociales__items"><a class="home__redessociales__items__link"
+                                href="https://facebook.com/diegollanosr17" target="_BLANK">
+                                <i class="bi bi-facebook home__redessociales__items__icon"></i>Facebook
+                            </a></li>
+                        <li class="home__redessociales__items"><a class="home__redessociales__items__link"
+                                href="https://instagram.com/diegollanosr17" target="_BLANK">
+                                <i class="bi bi-instagram home__redessociales__items__icon"></i>Instagram
+                            </a></li>
+                        <li class="home__redessociales__items"><a class="home__redessociales__items__link"
+                            href="https://youtube.com/@diegollanosr" target="_BLANK">
+                            <i class="bi bi-youtube home__redessociales__items__icon"></i>YouTube
+                        </a></li>
+                        <li class="home__redessociales__items">
+                            <a class="home__redessociales__items__link" href="./assets/documentos/cv_diegollanosr.pdf"
+                                target="_BLANK">
+                                <i class="bi bi-file-earmark-zip-fill home__redessociales__items__icon"></i> CV
+                                <i class="bi bi-arrow-up-right home__redessociales__items__icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section id="aboutme" class="aboutme__container">
+                <section class="aboutme__container__target">
+                    <article class="aboutme__items">
+                        <h2 class="subtitle">Sobre mi</h2>
+                        <article class="aboutme__items__info">
+                            <figure alt="foto" class="aboutme__items__img"></figure>
+                            <p class="body__text">
+                                Soy Diego Llanos Requelme, tengo <span class="body__text" id="edad"></span> años, soy de Perú.
+                            </p>
+                            <p class="body__text">
+                                Bachiller en Contabilidad y Desarrollador Front-End, especializado en generar propuestas de valor para solucionar problemas financieros y optimizar procesos. Mi carrera se ha caracterizado por la sistematización de procedimientos, permitiendo a las organizaciones alcanzar sus metas de manera eficiente. Con un enfoque proactivo y responsable, siempre busco mejorar continuamente y aportar valor significativo.
+                            </p>
+                            <p class="body__text">
+                                Mi experiencia incluye liderazgo de equipos, diseño de estrategias de ventas y marketing, y gestión contable para diversas empresas. Gracias a mis habilidades en diseño gráfico, he establecido líneas gráficas y creado logos para proyectos inmobiliarios, contribuyendo al crecimiento y visibilidad de las empresas. Además, he implementado medidas de seguridad digital y he reconocido errores comunes en la comunicación empresarial, mejorando la protección de datos y la integridad de la información corporativa.
+                            </p>
+                            <p class="body__text">
+                                He logrado incrementar significativamente los ingresos de las empresas para las que he trabajado, implementando estrategias que han resultado en incrementos de ventas de hasta 400%. Estoy comprometido con la mejora continua y la adquisición de nuevos conocimientos para ofrecer asesoría personalizada en finanzas personales. Mi objetivo es ayudar a las personas a tomar las mejores decisiones financieras y profesionales, asegurando una toma de decisiones informada y efectiva.
+                            </p>
+                            <p class="subtitle__n2">
+                                “Para llegar lejos empieza a hacer lo que hacen los grandes”
+                            </p>
+                            <p class="body__text">
+                                No dudes en contactarme.
+                            </p>
+                        </article>
+                        <a class="aboutme__button__link" href="#contacto">
+                            <button class="aboutme__button">
+                                Contactar 
+                                <i class="bi bi-arrow-down aboutme__button__icon"></i>
+                            </button>
+                        </a>
+                    </article>
+                </section>
+                <section id="formacion" class="aboutme__items">
+                    <h2 class="subtitle">Formación</h2>
+                    <article class="aboume__formacion">
+                        <figure class="formacion__targets">
+                            <div class="formacion__targets__imagen">
+                                <img class="formacion__targets__imagen__img" src="./assets/imagenes/LOGO_UNC.png" alt="logo universidad">
+                            </div>
+                            
+                            <p class="subtitle__n4">Contabilidad - Universidad Nacional de Cajamarca</p>
+                        </figure>
+                        <figure class="formacion__targets">
+                            <div class="formacion__targets__items">
+                                <div class="formacion__targets__item">
+                                    <div class="formacion__targets__imagen">
+                                        <a href="https://app.aluracursos.com/emprega-one/profile/diegollanosr" target="_blank">
+                                            <img class="formacion__targets__imagen__img" alt="logo Alura" src="./assets/imagenes/alura.svg">
+                                        </a>
+                                    </div>
+                                    <p class="text__center">Alura Latam</p>
+                                </div>
+                                <div class="formacion__targets__item">
+                                    <div class="formacion__targets__imagen">
+                                        <img class="formacion__targets__imagen__img" alt="logo ONE" src="./assets/imagenes/ONE.svg">
+                                    </div>
+                                    <p class="text__center">Oracle - ONE</p>
+                                </div>
+                            </div>
+                            <p class="subtitle__n4">Estoy aprendiendo en Oracle - ONE Proyecto ejecutado por Alura Latam</p>
+                        </figure>
+                    </article>
+                </section>
+                <section id="skills" class= "aboutme__container__target">
+                    <div class="aboutme__items">
+                        <h2 class="subtitle">Skills</h2>
+                        <h3 class="subtitle__n3">Contabilidad</h3>
+                        <section class="skills__targets">
+                            <figure class="skills__target">
+                                <i class="bi bi-pencil-square targets__icon"></i>
+                                <p class="subtitle__n4">Registro de Compras y Ventas</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__avanzado"></div>
+                                </div>
+                                <div class="skill__target__text ">
+                                    Todos los comprobantes registrados deben ser verificados si cumplen los requisitos mínimos para ser registrados y evitar sanciones de SUNAT.
+                                </div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-file-earmark-text targets__icon"></i>
+                                <p class="subtitle__n4">Declaraciones SUNAT</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__avanzado"></div>
+                                </div>
+                                <div class="skill__target__text">IGV, IR, PLE, AFPnet, PLAME.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-cash-coin targets__icon"></i>
+                                <p class="subtitle__n4">Control de ingresos y gastos.</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Llevar un buen registro permite tener una claridad de la situación financiera tanto de los negocios como de manera personal.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-calculator targets__icon"></i>
+                                <p class="subtitle__n4">Elaboración de presupuestos.</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__avanzado"></div>
+                                </div>
+                                <div class="skill__target__text">Los presupuestos son la forma de tener un plan para la utilización de los recursos financieros para lograr los objetivos establecidos.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-file-bar-graph targets__icon"></i>
+                                <p class="subtitle__n4">Elaboración EE.FF.</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Los estados financieros son la representación de la situación de la empresa, la cual se debe elaborar en el momento adecuado para una buena toma de decisiones.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-file-earmark-lock2 targets__icon"></i>
+                                <p class="subtitle__n4">Declaración Jurada Anual</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text ">Es importante cumplir las obligaciones tributarias para evitar sanciones y multas.
+                                </div>
+                            </figure>
+                        </section>
+                        <h3 class="subtitle__n3">Programación</h3>
+                        <section class="skills__targets">
+                            <figure class="skills__target">
+                                <i class="fa-brands fa-html5 targets__icon"></i>
+                                <p class="subtitle__n4">Html5</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Html es el lenguaje mas importante para estructurar las páginas web.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="fa-brands fa-css3-alt targets__icon"></i>
+                                <p class="subtitle__n4">Css3</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__avanzado"></div>
+                                </div>
+                                <div class="skill__target__text">Tengo conocimientos intermedios en css, lo que me permite tomar mejores decisiones para el diseño las páginas web.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="fa-brands fa-js targets__icon"></i>
+                                <p class="subtitle__n4">JavaScript</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Tengo conocimientos básicos de JavaScript para el funcionamiento y animaciones de las páginas web.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-phone targets__icon"></i>
+                                <p class="subtitle__n4">Responsive</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">Una de las cosas importantes al momento de hacer las páginas web es que sea funcional para todos los usuarios</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-github targets__icon"></i>
+                                <p class="subtitle__n4">GitHub</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">
+                                    GitHub es el repositorio más usado para guardar y mostrar los proyectos realizados.
+                                </div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-git targets__icon"></i>
+                                <p class="subtitle__n4">Git</p>
+                                <div class="skill__target__level">
+                                    <div class="skill__target__level__intermedio"></div>
+                                </div>
+                                <div class="skill__target__text">
+                                    Git es la herramienta mas importante al momento de guardar el progreso del desarrollo de proyectos.
+                                </div>
+                            </figure>
+                        </section>
+                        <h2 class="subtitle">Softs Skills</h2>
+                        <section class="skills__targets">
+                            <figure class="skills__target">
+                                <i class="bi bi-wechat targets__icon"></i>
+                                <p class="subtitle__n4">Comunicación</p>
+                                <div class="skill__target__text ">Puedo mantener comunicación con el equipo de desarrollo, atento a cualquier inquietud que se presente con el fin de llevar el proyecto de manera correcta.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-diagram-3-fill targets__icon"></i>
+                                <p class="subtitle__n4">Interacción</p>
+                                <div class="skill__target__text ">Soy capaz de iterar, recibiendo e interpretando el feedback que me sea proporcionado con el fin de mejorar la calidad del producto que esté diseñando</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-person-plus-fill targets__icon"></i>
+                                <p class="subtitle__n4">Coworking</p>
+                                <div class="skill__target__text ">Trato de ser un activo valioso en el equipo que esté trabajando, aportando mis conocimientos y material que optimice el flujo de trabajo en el desarrollo del sproyecto.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-signpost-split-fill targets__icon"></i>
+                                <p class="subtitle__n4">Business Agility</p>
+                                <div class="skill__target__text ">Tengo la capacidad de adaptarme rápidamente a los cambios para la entrega de valor para los clientes.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-bullseye targets__icon"></i>
+                                <p class="subtitle__n4">Planificación y Foco</p>
+                                <div class="skill__target__text ">Tengo la capacidad de establecer las prioridades en el desarrollo de las tareas y alcance de las metas.</div>
+                            </figure>
+                            <figure class="skills__target">
+                                <i class="bi bi-clock targets__icon"></i>
+                                <p class="subtitle__n4">Productividad</p>
+                                <div class="skill__target__text ">Tengo la capacidad de crear nuevos hábitos para una mejor administración del tiempo.</div>
+                            </figure>
+                        </section>
+                    </div>    
+                </section>
+                <section id="hobbies" class="aboutme__items ">
+                    <h2 class="subtitle">Hobbies e Intereses</h2>
+                    <section class="hobbies__targets">
+                        <figure class="hobbies__target">
+                            <i class="bi bi-headphones targets__icon"></i>
+                            <p class="subtitle__n4">Escuchar Música</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-display targets__icon"></i>
+                            <p class="subtitle__n4">Ver Series</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-controller targets__icon"></i>
+                            <p class="subtitle__n4">Videojuegos</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-brush-fill targets__icon"></i>
+                            <p class="subtitle__n4">Dibujo</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-rulers targets__icon"></i>
+                            <p class="subtitle__n4">Diseño Gráfico</p>
+                        </figure>
+                        <figure class="hobbies__target">
+                            <i class="bi bi-graph-up-arrow targets__icon"></i>
+                            <p class="subtitle__n4">Finanzas Personales</p>
+                        </figure>
+                    </section>
+                </section>
+            </section>
+            <section class="proyectos__container" id="proyectos">
+                <h2 class="subtitle">Proyectos</h2>
+                <section id="programacion" class="programacion__container">
+                    <div class="programacion__info">
+                        <h2 class="subtitle__n3">Programación</h2>
+                        <p class="body__text">En mi carrera de programación he elaborado y desarrollado varios proyectos siendo los siguientes los más importantes que he realizado.</p>
+                    </div>
+                    <div class="div__button__mostrar__targets">
+                        <button id="buttonMostrarTargets" class="button__mostrar__targets">
+                            Ver Más
+                        </button>
+                    </div>
+                    <div class="programacion__targets">
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/encriptador_one.png" alt="">
+                            <p class="subtitle__n4">Encriptador de textos </p>
+                            <p class="programacion__info">Diseño propuesto por Alura</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/encriptadorONE" target="_blank">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/encriptadorONE" target="_blank">
+                                <button class="programacion__target__button">Code</button>
+                            </a>
+                        </div>
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/encriptador_pers.png" alt="">
+                            <p class="subtitle__n4">Encriptador de textos </p>
+                            <p class="programacion__info">Diseño propio</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/encriptador" target="_blank">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/encriptador" target="_blank">
+                                <button class="programacion__target__button">Code</button>
+                            </a>                            
+                        </div>
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/portafolio_one.png" alt="">
+                            <p class="subtitle__n4">Portafolio </p>
+                            <p class="programacion__info">Diseño propuesto por Alura</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/portafolio" target="_blank">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/portafolio" target="_blank">
+                                <button class="programacion__target__button">Code</button>
+                            </a>
+                        </div>
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/portafolio_pers.png" alt="">
+                            <p class="subtitle__n4">Portafolio</p>
+                            <p class="programacion__info">Diseño propio</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/diegollanosr.github.io" target="_blank">
+                                <button class="programacion__target__button">Code</button>
+                            </a>
+                        </div>
+                        <div class="programacion__target">
+                            <img class="programacion__target__img" src="./assets/imagenes/alurageek_pers.png" alt="">
+                            <p class="subtitle__n4">AluraGeek</p>
+                            <p class="programacion__info">Diseño propio</p>
+                            <span class="programacion__icons">
+                                <i class="fa-brands fa-html5 programacion__icon"></i>
+                                <i class="fa-brands fa-css3-alt programacion__icon"></i>
+                                <i class="fa-brands fa-js programacion__icon"></i>
+                                <i class="bi bi-phone programacion__icon"></i>
+                            </span>
+                            <a href="https://diegollanosr.github.io/alurageek" target="_blank">
+                                <button class="programacion__target__button">Ver proyecto</button>
+                            </a> 
+                            <a href="https://github.com/diegollanosr/alurageek" target="_blank">
+                                <button class="programacion__target__button">Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="disenho" class="disenho__container">
+                    <div class="disenho__info">
+                        <h2 class="subtitle__n2">Diseños</h2>
+                        <p class="body__text">La imagen también es muy importante y un logo es la primera impresión que tendrán
+                            nuestros clientes la que nos ayudara a recordarnos, por eso que aquí te presento los trabajos de Diseño
+                            más importantes que he realizado.
+                        </p>
+                    </div>
+                    <section class="disenho__targets">
+                        <div class="disenho__target">
+                            <div class="disenho__items__img img__diegollanosr"></div>
+                            <p class="text__center">@diegollanosr</p>
+                        </div>
+                        <div class="disenho__target">
+                            <a href="http://inmowasi.com/" target="_blank"><div class="disenho__items__img img__inmowasi"></div>
+                            <p class="text__center">Inmo Wasi</p></a>
+                        </div>
+                        <div class="disenho__target">
+                            <div class="disenho__items__img img__tavo"></div>
+                            <p class="text__center">Servicio Técnico Tavo</p>
+                        </div>
+                        <div class="disenho__target">
+                            <a href="http://inmowasi.com/residenciallaspalmeras/" target="_blank"><div class="disenho__items__img img__palmeras"></div>
+                            <p class="text__center">Proy. Inmobiliario<br>Las Palmeras</p></a>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section id="contacto" class="contacto__container" >
+                <h2 class="subtitle">Contacto</h2>
+                <div class="contacto__items">
+                    <div class="informacion__contacto">
+                        <p class="subtitle__n2">¿Quieres contactarme?</p>
+                        <p class="text__center">Complete el siguiente formulario te contactare lo antes posible.<br>O puedes enviarme un
+                            mensaje al WhatsApp.</p>
+                        <p class="ocultar"><i class="bi bi-journal-medical"></i></p>
+                        <p class="contacto__icons">
+                            <a class="contacto__icon" href="https://wa.me/message/TU5QLECZNAOZA1"  target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                            <a class="contacto__icon" id="mailto" href="mailto:dllanosr17@gmail.com">
+                                <i class="bi bi-envelope-plus-fill"></i>
+                            </a>
+                            <a class="contacto__icon" href="https://www.linkedin.com/in/diegollanosr" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </p>
+                        <p class="text__usuario">@diegollanosr<span class="text__resaltado">17</span></p>
+                    </div>
+                    <form id="formularioContacto" class="formulario__contacto" action="https://formsubmit.co/dllanosr17@gmail.com" method="POST">
+                        <p>
+                            <label class="formulario__contacto__item " for="fullName">Nombre <span
+                                    class="text__resaltado">*</span></label>
+                            <input class="formulario__contacto__item__input " type="text" id="fullName" name="name" placeholder=" Nombre y Apellido"></input>
+                        </p>
+                        <p>
+                            <label class="formulario__contacto__item " for="email">Email <span class="text__resaltado">*</span></label>
+                            <input class="formulario__contacto__item__input " type="email" id="email" name="email"
+                                placeholder="email@contacto.com"></input>
+                        </p>
+                        <p>
+                            <label class="formulario__contacto__item " for="phone">Teléfono</label>
+                            <input class="formulario__contacto__item__input" type="tel" name="phone" id="phone"
+                                placeholder="+51 927 702 257"></input>
+                        </p>
+                        <p>
+                            <label for="affair" class="formulario__contacto__item ">Asunto<span class="text__resaltado">*</span></label>
+                            <input class="formulario__contacto__item__input " type="affair" id="affair" name="affair"
+                                placeholder="Asunto..."></input>
+                        </p>
+                        <textarea class="formulario__contacto__item__textarea " id="message" name="message" rows="4"
+                        placeholder="* Mensaje"></textarea>
+                        <button type="submit" class="formulario__contacto__item__button  button">Enviar</button>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://diegollanosr.github.io/">
+                        <p id="mensajeError" class="mensaje_contacto"></p>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <section id="footer" class="footer__container">
+            <p>Create by <span class="footer__text__usuario">@diegollanosr<span class="text__resaltado">17</span></span></p>
+            <div class="footer__redessociales">
+                <a href="https://github.com/diegollanosr" target="_BLANK">
+                    <i class="bi bi-github footer__icons "></i>
+                </a>
+                <a href="https://www.linkedin.com/in/diegollanosr/" target="_BLANK">
+                    <i class="bi bi-linkedin footer__icons"></i>
+                </a>
+                <a href="https://facebook.com/diegollanosr17" target="_BLANK">
+                    <i class="bi bi-facebook footer__icons"></i>
+                </a>
+                <a href="https://instagram.com/diegollanosr17" target="_BLANK">
+                    <i class="bi bi-instagram footer__icons"></i>
+                </a>
+                <a href="https://youtube.com/@diegollanosr" target="_BLANK">
+                    <i class="bi bi-youtube footer__icons"></i>
+                </a>
+            </div>
+            <p> &copy Copyright Diego Llanos R. - <span id="anhoActual"></span></p>
+        </section>
+    </footer>
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/animaciones.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
